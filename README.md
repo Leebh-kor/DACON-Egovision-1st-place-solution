@@ -1,8 +1,8 @@
 # Ego-Vision: hand motion recognition
 ## Introduction
 This repository is the 1st place solution for [DACON Ego-Vision Hand Gesture Recognition AI Contest](https://dacon.io/competitions/official/235805/overview/description). We developed a hand motion classification model using continuous image data extracted from Ego-Vision video. The key strategies used are as follows: 
-1. We applied custom augmentation considering data characteristics. 
-2. The final prediction value was made by applying a post-processing algorithm using keypoint for classes that are difficult to distinguish due to the characteristics of continuous hand movements.  
+1. Custom augmentation is applied in consideration of data characteristics. 
+2. Due to the problem caused by simply distinguishing dynamic Hand Movement into continuous but static images, the final predictions for some labels are determined by postprocessing algorithms.
 
 
 This is the overall model process.
