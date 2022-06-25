@@ -15,15 +15,15 @@ This is the overall model process.
 
 ## Main strategy(Other training techniques are omitted.)
 - Custom Data Augmentation
-    1. Random Crop using key points 
-    - Most of images in a single folder are very similar with each others.
-    - We applied random crop augmentation adopting probabilistic marginalizing based on key points so that hand positions are transformed differently.
+    - Random Crop using key points 
+        - Most of images in a single folder are very similar with each others.
+        - We applied random crop augmentation adopting probabilistic marginalizing based on key points so that hand positions are transformed differently.
 
-    2. Flip Augmentation
-    - Horizontal flip augmentation has to be handled carefully because some assigned different classes depending on left or right-handed image even if the poses are the same.
-    - We filtered out those classes and changed the class label if the augmentation is applied.
-    - Experimental results showed the best result when it comes to apply flip augmentation on 0.3 ratio among the range of 0.1 to 0.5.
-    <div align="center"><img src="img/flip_aug.png" width="740px" height="300px"/></div>
+    - Flip Augmentation
+        - Horizontal flip augmentation has to be handled carefully because some assigned different classes depending on left or right-handed image even if the poses are the same.
+        - We filtered out those classes and changed the class label if the augmentation is applied.
+        - Experimental results showed the best result when it comes to apply flip augmentation on 0.3 ratio among the range of 0.1 to 0.5.
+        <div align="center"><img src="img/flip_aug.png" width="740px" height="300px"/></div>
 
 - Post-Processing
     - Motivation
